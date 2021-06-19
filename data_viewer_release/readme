@@ -1,1 +1,13 @@
+DATA_VIEWER release version
+
+Data Viewer发布版本软件
+
+操作说明：
+1. 根据个人需求以及通信协议修改配置文件，配置文件为Config文件夹下的Config.txt（具体配置方法查看Config目录下的readme）；
+2. 打开Line_viewer.exe，在软件中设置相应的端口打开start即可
+
+
+
+
+
 
