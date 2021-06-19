@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>971</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>951</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::South</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Curve</string>
+     </attribute>
+     <widget class="QwtPlot" name="Line_plot">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>941</width>
+        <height>401</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Set Usart</string>
+     </attribute>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>160</y>
+        <width>229</width>
+        <height>53</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;端口&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="Com_sel">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>22</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>Com0</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Com1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Com2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Com3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Com4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Com5</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Com6</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Com7</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Com8</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Com9</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QComboBox" name="baudrate_sel">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>22</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>4800</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>9600</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>19200</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>38400</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>115200</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;波特率&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="Open_uart_button">
+         <property name="text">
+          <string>Open</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTextBrowser" name="procotol_dis">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>391</width>
+        <height>401</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Set TCP/UDP</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Data Save</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="Start_button">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>460</y>
+      <width>91</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>460</y>
+      <width>601</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Select line</string>
+    </property>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>601</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QCheckBox" name="C_B_line0">
+        <property name="text">
+         <string>Line0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="C_B_line1">
+        <property name="text">
+         <string>Line1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="C_B_line2">
+        <property name="text">
+         <string>Line2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="C_B_line3">
+        <property name="text">
+         <string>Line3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="C_B_line4">
+        <property name="text">
+         <string>Line4</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="C_B_line5">
+        <property name="text">
+         <string>Line5</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="C_B_line6">
+        <property name="text">
+         <string>Line6</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="C_B_line7">
+        <property name="text">
+         <string>Line7</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="C_B_line8">
+        <property name="text">
+         <string>Line8</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="C_B_line9">
+        <property name="text">
+         <string>Line9</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>490</y>
+      <width>601</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Command</string>
+    </property>
+    <widget class="QTextBrowser" name="msg_dis">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>601</width>
+       <height>51</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>971</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
