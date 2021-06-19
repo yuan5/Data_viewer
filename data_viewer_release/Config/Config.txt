@@ -1,0 +1,27 @@
+
+*********Figure title: IMU数据
+Figure title: IMU数据
+******************* line config ******************
+Line number: 2
+Slide lenth: 250
+Update period: 10
+
+****************** line name ********************
+Line[0] name: accx
+Line[1] name: accy
+Line[2] name: accz
+Line[3] name: gyrox
+Line[4] name: gyroy
+Line[5] name: gyroz
+*************** translate protocol **************
+Data header lenth: 2
+Data header[0]: 0xaa
+Data header[1]: 0x55
+*****all length    longer than  (Line_number*Single_data_size+Data_start+Checksum lenth)
+Data lenth: 8
+Data start: 2
+Data scale: 0.0055
+Check sum: yes
+Checksum lenth: 1
+*****unit byte
+Single data size: 2
